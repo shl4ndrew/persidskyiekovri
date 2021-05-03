@@ -3,27 +3,34 @@
 		<TITLE>Персидские ковры</TITLE>
 	</HEAD>
 	<STYLE>
-		body{background-image: url("1.png"); background-size: 100%; background-repeat: no-repeat; overflow-y: hidden;}
-		html{overflow-y: hidden;}
-		a.returntext{background: url("text.png"); display: block; width: 700px; height: 130px;}
+		body{background-image: url("1.png"); background-size: 100%; background-repeat: no-repeat;}
+		table{border-collapse: collapse; border: 1px; position: relative; top: 30%}
+		td{border: 1px}
+		a.returntext{background: url("text.png"); display: block; width: 38%; height: 14%;position: absolute;}
 		a.returntext:hover{background: url("text2.png");}
-		a.history{background: url("history1.png"); display: block;width: 615px; height: 300px; position: absolute; top: 320px}
+		a.history{background: url("history1.png"); display: block;width: 615px; height: 300px; position: relative;}
 		a.history:hover{background: url("history2.png");}
-		a.uhod{background: url("uhod1.png"); display: block;width: 615px; height: 300px; position: absolute; top: 610px;}
+		a.uhod{background: url("uhod1.png"); display: block;width: 615px; height: 300px; position: relative;}
 		a.uhod:hover{background: url("uhod2.png");}
-		a.osob{background: url("osob1.png"); display: block;width: 615px; height: 300px; position: absolute; left: 610px;top: 610px}
+		a.osob{background: url("osob1.png"); display: block;width: 615px; height: 300px; position: relative;}
 		a.osob:hover{background: url("osob2.png");}
-		a.gde{background: url("gde1.png"); display: block;width: 615px; height: 300px; position: absolute; left: 610px; top: 320px}
+		a.gde{background: url("gde1.png"); display: block;width: 615px; height: 300px; position: relative;}
 		a.gde:hover{background: url("gde2.png");}
-		a.gal{background: url("gal1.png"); display: block;width: 615px; height: 630px; position: absolute; left: 1210px; top: 317px}
+		a.gal{background: url("gal1.png"); display: block;width: 615px; height: 630px; position: relative;}
 		a.gal:hover{background: url("gal2.png");}
 	</STYLE>	
 	<BODY>
 		<pre><a href="index.html" class="returntext"></a></pre>
-		<pre><a href="history.html" class="history"></a></pre>
-		<pre><a href="uhod.html" class="uhod"></a></pre>
-		<pre><a href="index.html" class="gde"></a></pre>
-		<pre><a href="index.html" class="osob"></a></pre>
-		<pre><a href="index.html" class="gal"></a></pre>
+		<TABLE>
+			<TR>
+				<TD><a href="history.html" class="history"></a></TD>
+				<TD><a href="index.html" class="gde"></a></TD>
+				<TD rowspan="2"><a href="index.html" class="gal"></a></TD>
+			</TR>
+			<TR>
+				<TD><a href="uhod.html" class="uhod"></a></TD>
+				<TD><a href="index.html" class="osob"></a></TD>
+			</TR>
+		</TABLE>
 	</BODY>
 </HTML>
