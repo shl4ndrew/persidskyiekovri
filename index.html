@@ -12,6 +12,32 @@
 
   			gtag('config', 'G-MGKVBSM8Q7');
 		</script>
+		<script>  
+  			document.oncontextmenu = function() {  
+  			return false;  
+  			};  
+  			document.onkeydown = function(e) {  
+  			if (e.keyCode == 123) {  
+  			return false;  
+  			}  
+  			if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {  
+  			return false;  
+  			}  
+  			if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {  
+  			return false;  
+  			}  
+  			if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {  
+  			return false;   
+  			}  
+  			if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {  
+  			return false;  
+  			} 
+
+  			if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {  
+  			return false;  
+  			}  
+  			}  
+		</script>
 	</head>
 	<style>
 		.container{min-width: 900px; max-height: 1000px;}
@@ -35,7 +61,7 @@
 		a.gal:hover{background: url("gal2.png");}
 	</style>
 		
-	<body>
+	<body onContextMenu="return false;">
 		<div class="container">
 			<pre><a href="index.html" class="returntext"></a></pre>
 			<div class="load">
